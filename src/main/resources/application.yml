@@ -1,0 +1,22 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: eureka
+
+eureka:
+  client:
+    #    registryFetchIntervalSeconds: 5
+    registerWithEureka: false
+    fetchRegistry: false
+  #    serviceUrl:
+  #      defaultZone: http://localhost:8888/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+  server:
+    eviction-interval-timer-in-ms: 60000
+    renewal-threshold-update-interval-ms: 9000000
+    enable-self-preservation: true
+
