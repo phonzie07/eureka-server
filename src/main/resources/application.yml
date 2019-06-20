@@ -12,11 +12,12 @@ eureka:
     fetchRegistry: false
   #    serviceUrl:
   #      defaultZone: http://localhost:8888/eureka
-  instance:
-    lease-renewal-interval-in-seconds: 30
-    lease-expiration-duration-in-seconds: 90
+#  instance:
+#    lease-renewal-interval-in-seconds: 30
+#    lease-expiration-duration-in-seconds: 90
   server:
-    eviction-interval-timer-in-ms: 60000
-    renewal-threshold-update-interval-ms: 9000000
-    enable-self-preservation: true
+#    eviction-interval-timer-in-ms: 60000
+#    renewal-threshold-update-interval-ms: 9000000
+    enable-self-preservation: false
+
 
